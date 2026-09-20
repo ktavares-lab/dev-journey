@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio pessoal de Kaique Tavares, desenvolvedor de software.">
-    <title>Kaique Tavares | Desenvolvedor de Software</title>
+    <meta name="description" content="Portfólio pessoal de Kaique Tavares, desenvolvedor de software focado em backend, microsserviços e dados.">
+    <title>Kaique Tavares | Desenvolvedor de Software (v2)</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,9 +12,9 @@
 
     <header class="header">
         <nav class="navbar">
-            <a href="#home" class="logo">Kaique.</a>
+            <a href="#home" class="logo">Kaique<span>.</span></a>
 
-            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false">
                 ☰
             </button>
 
@@ -27,6 +27,9 @@
                 <li><a href="#experiencias">Experiências</a></li>
                 <li><a href="#alem-do-codigo">Além do código</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <!-- Links obrigatórios para o trabalho -->
+                <li><a href="catalogo.html" class="nav-extra">Catálogo Impeccable</a></li>
+                <li><a href="registros.html" class="nav-extra">Registros v2</a></li>
             </ul>
         </nav>
     </header>
@@ -39,15 +42,14 @@
 
                 <h1>Kaique Tavares</h1>
 
-                <h2>Desenvolvedor de Software</h2>
+                <h2>Desenvolvedor de Software Backend</h2>
 
                 <p class="hero-description">
-                    Estudante de Análise e Desenvolvimento de Sistemas,
-                    interessado em backend, arquitetura de software e dados.
+                    Estudante de Análise e Desenvolvimento de Sistemas, com foco em ecossistema Java, Spring Boot, microsserviços e engenharia de dados.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#projetos" class="btn">Ver projetos</a>
+                    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
                     <a href="#contato" class="btn btn-outline">Entrar em contato</a>
                 </div>
             </div>
@@ -60,26 +62,32 @@
                 <h2 class="section-title">Construindo minha trajetória na tecnologia</h2>
 
                 <div class="about-content">
-                    <div class="about-image"></div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>Backend</h3>
+                            <p>Java & Spring</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Eventos</h3>
+                            <p>Kafka & Mensageria</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Dados</h3>
+                            <p>Python & SQL</p>
+                        </div>
+                    </div>
 
                     <div class="about-text">
                         <p>
-                            Sou estudante de Análise e Desenvolvimento de Sistemas
-                            e venho construindo minha experiência principalmente
-                            no desenvolvimento backend.
+                            Sou estudante de Análise e Desenvolvimento de Sistemas e venho construindo minha experiência prática voltada para a criação de sistemas backend escaláveis e seguros.
                         </p>
 
                         <p>
-                            Tenho estudado e desenvolvido projetos utilizando Java,
-                            Spring Boot, microsserviços, Kafka, bancos de dados e,
-                            mais recentemente, Python e tecnologias voltadas para dados.
+                            Tenho desenvolvido soluções utilizando <strong>Java 21, Spring Boot, microsserviços, Kafka, Docker</strong> e, recentemente, expandindo minha atuação para ecossistemas de dados com <strong>Python e SQL</strong>.
                         </p>
 
                         <p>
-                            Meu objetivo é continuar evoluindo como desenvolvedor,
-                            criando aplicações cada vez mais completas e entendendo
-                            não apenas o código, mas também a arquitetura por trás
-                            das soluções.
+                            Busco evoluir continuamente minha visão de arquitetura de software, aplicando boas práticas de design, desacoplamento e performance.
                         </p>
                     </div>
                 </div>
@@ -96,69 +104,33 @@
 
                     <article class="timeline-item">
                         <span class="timeline-year">2024</span>
-
                         <div class="timeline-content">
-                            <h3>Início da programação</h3>
-
-                            <p>
-                                Início da formação em Análise e Desenvolvimento
-                                de Sistemas e dos estudos em programação.
-                            </p>
+                            <h3>Início na Programação</h3>
+                            <p>Ingresso na graduação de Análise e Desenvolvimento de Sistemas e primeiros fundamentos de lógica e estruturas de dados.</p>
                         </div>
                     </article>
 
                     <article class="timeline-item">
                         <span class="timeline-year">2025</span>
-
                         <div class="timeline-content">
-                            <h3>Java e Spring Boot</h3>
-
-                            <p>
-                                Aprofundamento em Java, orientação a objetos,
-                                Spring Boot, APIs REST, segurança e persistência
-                                de dados.
-                            </p>
+                            <h3>Aprofundamento Java & Spring</h3>
+                            <p>Desenvolvimento em Java, orientação a objetos, APIs REST com Spring Boot, persistência de dados (JPA/Hibernate) e segurança.</p>
                         </div>
                     </article>
 
                     <article class="timeline-item">
                         <span class="timeline-year">2026</span>
-
                         <div class="timeline-content">
-                            <h3>Microsserviços e mensageria</h3>
-
-                            <p>
-                                Desenvolvimento de sistemas utilizando
-                                microsserviços, Spring Cloud, Kafka, WebSocket,
-                                Docker e outras tecnologias do ecossistema backend.
-                            </p>
+                            <h3>Microsserviços & Eventos</h3>
+                            <p>Construção de arquiteturas distribuídas com Spring Cloud, mensageria assíncrona com Apache Kafka, Docker e containers.</p>
                         </div>
                     </article>
 
                     <article class="timeline-item">
                         <span class="timeline-year">2026</span>
-
                         <div class="timeline-content">
-                            <h3>Python e dados</h3>
-
-                            <p>
-                                Expansão dos estudos para Python, SQL, Pandas
-                                e desenvolvimento de soluções relacionadas
-                                a dados e pipelines.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="timeline-item">
-                        <span class="timeline-year">Próximos passos</span>
-
-                        <div class="timeline-content">
-                            <h3>Continuar evoluindo</h3>
-
-                            <p>
-                                Aprofundar conhecimentos em desenvolvimento,
-                                arquitetura de software, dados e novas tecnologias.
-                            </p>
+                            <h3>Python & Ecossistema de Dados</h3>
+                            <p>Estudo e aplicação de Python, manipulação de dados com Pandas, pipelines de dados e consultas SQL avançadas.</p>
                         </div>
                     </article>
 
@@ -170,50 +142,47 @@
             <div class="container">
                 <p class="section-subtitle">Tecnologias</p>
 
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title">Skills & Ferramentas</h2>
 
                 <div class="skills-grid">
-
                     <article class="skill-card">
-                        <h3>Java</h3>
-                        <p>Desenvolvimento backend</p>
+                        <h3>Java 21</h3>
+                        <p>Desenvolvimento backend robusto</p>
                     </article>
-
                     <article class="skill-card">
                         <h3>Spring Boot</h3>
-                        <p>APIs e aplicações backend</p>
+                        <p>APIs REST e microsserviços</p>
                     </article>
 
                     <article class="skill-card">
                         <h3>Spring Cloud</h3>
-                        <p>Arquitetura de microsserviços</p>
+                        <p>Service Discovery e API Gateway</p>
                     </article>
 
                     <article class="skill-card">
-                        <h3>Kafka</h3>
-                        <p>Mensageria e eventos</p>
+                        <h3>Apache Kafka</h3>
+                        <p>Arquitetura orientada a eventos</p>
                     </article>
 
                     <article class="skill-card">
                         <h3>Python</h3>
-                        <p>Programação e dados</p>
+                        <p>Scripting e análise de dados</p>
                     </article>
 
                     <article class="skill-card">
-                        <h3>SQL</h3>
-                        <p>Banco de dados</p>
+                        <h3>SQL & Bancos</h3>
+                        <p>PostgreSQL e MySQL</p>
                     </article>
 
                     <article class="skill-card">
                         <h3>Docker</h3>
-                        <p>Containerização</p>
+                        <p>Containerização de aplicações</p>
                     </article>
 
                     <article class="skill-card">
-                        <h3>Git</h3>
-                        <p>Versionamento</p>
+                        <h3>Git & GitHub</h3>
+                        <p>Controle de versão e CI/CD</p>
                     </article>
-
                 </div>
             </div>
         </section>
@@ -222,24 +191,13 @@
             <div class="container">
                 <p class="section-subtitle">O que estou construindo</p>
 
-                <h2 class="section-title">Projetos</h2>
+                <h2 class="section-title">Projetos em Destaque</h2>
 
-                <div class="project-filters">
-                    <button type="button" class="filter-btn active" data-filter="todos">
-                        Todos
-                    </button>
-
-                    <button type="button" class="filter-btn" data-filter="java">
-                        Java
-                    </button>
-
-                    <button type="button" class="filter-btn" data-filter="python">
-                        Python
-                    </button>
-
-                    <button type="button" class="filter-btn" data-filter="dados">
-                        Dados
-                    </button>
+                <div class="project-filters" role="tablist">
+                    <button type="button" class="filter-btn active" data-filter="todos" aria-pressed="true">Todos</button>
+                    <button type="button" class="filter-btn" data-filter="java" aria-pressed="false">Java</button>
+                    <button type="button" class="filter-btn" data-filter="python" aria-pressed="false">Python</button>
+                    <button type="button" class="filter-btn" data-filter="dados" aria-pressed="false">Dados</button>
                 </div>
 
                 <div class="projects-grid">
@@ -247,15 +205,8 @@
                     <article class="project-card" data-category="java">
                         <div class="project-content">
                             <p class="project-category">Microsserviços</p>
-
                             <h3>Food Delivery System</h3>
-
-                            <p>
-                                Sistema de entrega de comida desenvolvido com
-                                arquitetura de microsserviços utilizando
-                                Spring Boot e tecnologias do ecossistema Cloud.
-                            </p>
-
+                            <p>Sistema distribuído de entregas construído com arquitetura de microsserviços, mensageria com Kafka e desacoplamento de serviços.</p>
                             <div class="project-technologies">
                                 <span>Java 21</span>
                                 <span>Spring Boot</span>
@@ -263,15 +214,8 @@
                                 <span>Kafka</span>
                                 <span>Docker</span>
                             </div>
-
                             <div class="project-links">
-                                <a
-                                    href="https://github.com/KaiqueVieiraTavares/entrega-comida"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    GitHub
-                                </a>
+                                <a href="https://github.com/KaiqueVieiraTavares/entrega-comida" target="_blank" rel="noopener noreferrer" aria-label="Acessar projeto Food Delivery no GitHub">Ver no GitHub →</a>
                             </div>
                         </div>
                     </article>
@@ -279,30 +223,16 @@
                     <article class="project-card" data-category="java">
                         <div class="project-content">
                             <p class="project-category">Microsserviços</p>
-
                             <h3>Music System</h3>
-
-                            <p>
-                                Sistema de música desenvolvido com arquitetura
-                                distribuída, contendo serviços independentes
-                                para usuários, músicas, artistas, busca e analytics.
-                            </p>
-
+                            <p>Plataforma de música em arquitetura distribuída com microsserviços independentes para gestão de usuários, artistas e analytics.</p>
                             <div class="project-technologies">
                                 <span>Java</span>
                                 <span>Spring Boot</span>
                                 <span>Microsserviços</span>
                                 <span>Kafka</span>
                             </div>
-
                             <div class="project-links">
-                                <a
-                                    href="https://github.com/KaiqueVieiraTavares/music-system"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    GitHub
-                                </a>
+                                <a href="https://github.com/KaiqueVieiraTavares/music-system" target="_blank" rel="noopener noreferrer" aria-label="Acessar projeto Music System no GitHub">Ver no GitHub →</a>
                             </div>
                         </div>
                     </article>
@@ -318,26 +248,15 @@
                 <h2 class="section-title">Experiências</h2>
 
                 <div class="experience-list">
-
                     <article class="experience-item">
-                        <h3>Projetos acadêmicos</h3>
-
-                        <p>
-                            Desenvolvimento de aplicações e sistemas durante
-                            a formação em Análise e Desenvolvimento de Sistemas.
-                        </p>
+                        <h3>Projetos Acadêmicos & Práticos</h3>
+                        <p>Desenvolvimento e arquitetura de aplicações completas durante a formação em ADS e projetos pessoais aplicados ao mercado.</p>
                     </article>
 
                     <article class="experience-item">
-                        <h3>Desenvolvimento backend</h3>
-
-                        <p>
-                            Experiência prática em projetos utilizando Java,
-                            Spring Boot, microsserviços, Kafka, bancos de dados
-                            e Docker.
-                        </p>
+                        <h3>Desenvolvimento Backend</h3>
+                        <p>Construção de APIs, mensageria orientada a eventos, gerenciamento de banco de dados e empacotamento com Docker.</p>
                     </article>
-
                 </div>
             </div>
         </section>
@@ -346,35 +265,23 @@
             <div class="container">
                 <p class="section-subtitle">Fora da programação</p>
 
-                <h2 class="section-title">Além do código</h2>
+                <h2 class="section-title">Além do Código</h2>
 
                 <div class="life-grid">
-
                     <article class="life-card">
-    <h3>Hobbies</h3>
-
-    <p>
-        No meu tempo livre, gosto de jogar tênis de mesa
-        e também de jogar jogos online.
-    </p>
-</article>
+                        <h3>Hobbies</h3>
+                        <p>Prática de tênis de mesa e jogos online estratégicos no tempo livre.</p>
+                    </article>
 
                     <article class="life-card">
                         <h3>Viagens</h3>
-
-                        <p>
-                           Viajei para o Rio de Janeiro em 2019, achei a cidade muito bonita e interessante.
-                        </p>
+                        <p>Experiência marcante conhecendo o Rio de Janeiro em 2019.</p>
                     </article>
 
                     <article class="life-card">
                         <h3>Interesses</h3>
-
-                        <p>
-                            Música, esportes, séries, filmes, etc...
-                        </p>
+                        <p>Apreciação de música, esportes, séries e constantes aprendizados.</p>
                     </article>
-
                 </div>
             </div>
         </section>
@@ -383,35 +290,16 @@
             <div class="container">
                 <p class="section-subtitle">Contato</p>
 
-                <h2 class="section-title">Vamos conversar</h2>
+                <h2 class="section-title">Vamos conversar?</h2>
 
                 <p class="contact-description">
-                    Você pode encontrar meus projetos e acompanhar
-                    minha trajetória através dos meus canais profissionais.
+                    Estou disponível para oportunidades de estágio e projetos na área de desenvolvimento backend e dados.
                 </p>
 
                 <div class="contact-links">
-
-                    <a
-                        href="https://github.com/KaiqueVieiraTavares"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/kaique-tavares-1653822b4/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-                    <a href="mailto:kaique.tavares.dev@gmail.com">
-                        kaique.tavares.dev@gmail.com
-                    </a>
-
+                    <a href="https://github.com/KaiqueVieiraTavares" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/kaique-tavares-1653822b4/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn">LinkedIn</a>
+                    <a href="mailto:kaique.tavares.dev@gmail.com" aria-label="Enviar e-mail para Kaique">Email</a>
                 </div>
             </div>
         </section>
@@ -419,7 +307,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Kaique Tavares.</p>
+        <p>&copy; 2026 Kaique Tavares. Portfólio v2 aprimorado com Impeccable Design.</p>
     </footer>
 
     <script src="js/script.js"></script>

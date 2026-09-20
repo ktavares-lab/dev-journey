@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Comandos Impeccable</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.5rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+    .card-title {
+      color: var(--accent);
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 0;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+    .field {
+      margin-bottom: 0.5rem;
+    }
+    .label {
+      font-weight: bold;
+      color: #94a3b8;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      display: block;
+    }
+    .val {
+      font-size: 0.95rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #0284c7;
+      color: #fff;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Catálogo de Comandos Impeccable Design</h1>
+    <p>Estudo obrigatório dos 23 comandos para análise, correção e evolução de interfaces.</p>
+  </header>
+
+  <main class="grid">
+
+    <!-- 1. init -->
+    <div class="card">
+      <div class="card-title">1. init</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Sistematizar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Inicializar as configurações base e estrutura inicial do projeto de design.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">No início da fase de reconstrução ou correção de uma interface.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable init --theme dark --grid 8px`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Sobrescrever estilos legados essenciais se executado sem backup da v1.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Arquivo de variáveis globais e tokens de design gerados no repositório.</span></div>
+    </div>
+
+    <!-- 2. document -->
+    <div class="card">
+      <div class="card-title">2. document</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Sistematizar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Mapear e documentar a estrutura visual e os componentes existentes.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Antes de aplicar modificações, para mapear o estado atual (v1).</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable document --output docs/design-system.md`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Gerar documentação excessiva e irrelevante se o escopo não for delimitado.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Presença do relatório estruturado com a inventariação de botões, cores e fontes.</span></div>
+    </div>
+
+    <!-- 3. shape -->
+    <div class="card">
+      <div class="card-title">3. shape</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Criar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Definir o layout estrutural e o wireframe do projeto.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Ao reestruturar seções do portfólio que estão desalinhadas.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable shape --layout flexbox --hero centered`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Quebrar a responsividade caso crie containers rígidos demais.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Layout com grid limpo e distribuição proporcional das seções.</span></div>
+    </div>
+
+    <!-- 4. critique -->
+    <div class="card">
+      <div class="card-title">4. critique</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Avaliar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Gerar crítica visual e heurística do design com base em princípios de UX.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Logo após a fase de diagnósticos iniciais no projeto v1.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable critique --page index.html`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Receber sugestões genéricas se a entrada de contexto for ruim.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Lista pontual de falhas visuais identificadas e sugestões de ajuste.</span></div>
+    </div>
+
+    <!-- 5. audit -->
+    <div class="card">
+      <div class="card-title">5. audit</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Avaliar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Auditar problemas técnicos de acessibilidade, contraste e padrões HTML/CSS.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Antes das fases de refinamento visual e produção.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable audit --wcag AA`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Gerar um volume alto de avisos sem priorização de impacto.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Relatório de conformidade Accessibility/WCAG com pontuação e falhas pontuadas.</span></div>
+    </div>
+
+    <!-- 6. refine-typography -->
+    <div class="card">
+      <div class="card-title">6. refine-typography</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Refinar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Ajustar escalas, pesos, famílias tipográficas e legibilidade.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Quando o contraste ou a hierarquia de textos estão confusos.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable refine-typography --scale modular --font Inter`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Prejudicar a hierarquia visual com excesso de variações de pesos/fontes.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Texto legível, com altura de linha (line-height) proporcional e hierarquia visual clara.</span></div>
+    </div>
+
+    <!-- 7. refine-color -->
+    <div class="card">
+      <div class="card-title">7. refine-color</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Refinar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Ajustar a paleta de cores para coerência e contraste de acessibilidade.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Ao identificar cores conflitantes ou baixo contraste no fundo.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable refine-color --palette slate-sky`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Descaracterizar a identidade visual do desenvolvedor.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Passagem no teste de contraste WCAG 2.1 (mínimo 4.5:1).</span></div>
+    </div>
+
+    <!-- 8. refine-spacing -->
+    <div class="card">
+      <div class="card-title">8. refine-spacing</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Refinar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Harmonizar paddings e margins usando escala consistente.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Quando elementos estão colados ou com espaçamentos desproporcionais.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable refine-spacing --unit 8px`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Empurrar componentes para fora da tela em dispositivos menores.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Respiro visual uniforme entre cartões, botões e seções.</span></div>
+    </div>
+
+    <!-- 9. refine-alignment -->
+    <div class="card">
+      <div class="card-title">9. refine-alignment</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Refinar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Corrigir o alinhamento dos eixos horizontal e vertical dos componentes.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Quando itens de uma lista ou menu estão desalinhados.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable refine-alignment --axis flex-start`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Criar alinhamentos que se desestruturam em telas móbile.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Grelha com eixos perfeitamente alinhados na inspeção visual.</span></div>
+    </div>
+
+    <!-- 10. refine-borders -->
+    <div class="card">
+      <div class="card-title">10. refine-borders</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Refinar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Padronizar cantos arredondados (border-radius) e espessura de bordas.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Quando os cartões do portfólio possuem raios de borda incoerentes.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable refine-borders --radius 8px`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Arredondar excessivamente elementos que exigem precisão.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Consistência nos cantos de cartões, formulários e botões.</span></div>
+    </div>
+
+    <!-- 11. simplify-layout -->
+    <div class="card">
+      <div class="card-title">11. simplify-layout</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Simplificar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Remover divs aninhadas sem necessidade e simplificar a DOM.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Quando o código HTML apresenta estrutura complexa desnecessária.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable simplify-layout --flat-dom`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Perder flexibilidade para posicionamentos complexos no CSS.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Redução da profundidade do HTML e CSS mais enxuto.</span></div>
+    </div>
+
+    <!-- 12. simplify-content -->
+    <div class="card">
+      <div class="card-title">12. simplify-content</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Simplificar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Sintetizar textos, títulos e legendas para carregamento cognitivo leve.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Quando blocos de texto no portfólio estão longos e cansativos.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable simplify-content --target concise`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Omitir detalhes cruciais de projetos acadêmicos ou profissionais.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Textos mais diretos com maior escaneabilidade (bullet points).</span></div>
+    </div>
+
+    <!-- 13. simplify-styles -->
+    <div class="card">
+      <div class="card-title">13. simplify-styles</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Simplificar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Limpar seletores CSS redundantes e descartar código morto.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Na otimização do arquivo de estilos antes da publicação.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable simplify-styles --purge-unused`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Remover seletores aplicados a estados dinâmicos como `:hover` ou `:focus`.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Arquivo CSS menor em tamanho KB e sem regras duplicadas.</span></div>
+    </div>
+
+    <!-- 14. prep-responsive -->
+    <div class="card">
+      <div class="card-title">14. prep-responsive</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Preparar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Garantir adaptação suave para telas móbile, tablet e desktop.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Durante a fase de preparação para produção.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable prep-responsive --breakpoints 640,768,1024`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Causar quebra de layout em resoluções intermediárias não testadas.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Interface fluida e sem barra de rolagem horizontal em dispositivos móveis.</span></div>
+    </div>
+
+    <!-- 15. prep-accessibility -->
+    <div class="card">
+      <div class="card-title">15. prep-accessibility</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Preparar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Inserir atributos ARIA, marcas semânticas e navegação via teclado.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Ao preparar o portfólio para os requisitos finais de entrega.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable prep-accessibility --aria-labels`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Uso incorreto de atributos ARIA prejudicando leitores de tela.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Navegação completa via `Tab` e suporte adequado a leitores de tela.</span></div>
+    </div>
+
+    <!-- 16. prep-assets -->
+    <div class="card">
+      <div class="card-title">16. prep-assets</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Preparar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Otimizar imagens, ícones SVG e fontes para alto desempenho.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Antes do deploy final da versão v2.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable prep-assets --format webp`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Perda excessiva de qualidade de imagens se houver compressão agressiva.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Diminuição do tempo de carregamento no Google PageSpeed/Lighthouse.</span></div>
+    </div>
+
+    <!-- 17. polish -->
+    <div class="card">
+      <div class="card-title">17. polish</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Refinar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Aplicar os microdetalhes visuais finais, como transições, sombras e feedback interativo.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Na reta final de ajustes antes de lançar o projeto.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable polish --transitions smooth`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Excesso de animações tornando a navegação lenta ou poluída.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Animações suaves de hover em botões e links sem engasgos visuais.</span></div>
+    </div>
+
+    <!-- 18. live -->
+    <div class="card">
+      <div class="card-title">18. live</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Preparar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Validar e preparar a aplicação para ambiente de publicação e deploy.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Na fase final, garantindo que os links e caminhos funcionem no servidor.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable live --check-links`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Esquecer links relativos que quebragem em subdiretórios no GitHub Pages.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Todos os links navegáveis e sem erros 404 no console.</span></div>
+    </div>
+
+    <!-- 19. extract -->
+    <div class="card">
+      <div class="card-title">19. extract</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Sistematizar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Extrair componentes reutilizáveis a partir do código final melhorado.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Após finalizar as melhorias do portfólio v2.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable extract --components cards,buttons`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Criar abstrações desnecessárias para elementos de uso único.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Biblioteca de classes ou componentes pronta para reutilização.</span></div>
+    </div>
+
+    <!-- 20. create-component -->
+    <div class="card">
+      <div class="card-title">20. create-component</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Criar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Gerar um novo componente do zero seguindo as regras do design system.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Quando for necessário adicionar um novo elemento no portfólio (ex: modal).</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable create-component --name modal-projeto`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Criar componentes desalinhados com o resto do estilo se faltar contexto.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Componente novo gerado já integrado ao CSS existente.</span></div>
+    </div>
+
+    <!-- 21. refine-icons -->
+    <div class="card">
+      <div class="card-title">21. refine-icons</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Refinar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Padronizar estilos, pesos e dimensões dos ícones do projeto.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Quando o portfólio usa ícones de fontes e tamanhos variados.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable refine-icons --set lucide --size 24px`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Substituir ícones intuitivos por outros de significado ambíguo.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Ícones com espessura de traço e dimensões alinhadas.</span></div>
+    </div>
+
+    <!-- 22. check-contrast -->
+    <div class="card">
+      <div class="card-title">22. check-contrast</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Avaliar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Verificação em tempo real da razão de contraste entre texto e fundo.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Ao selecionar novas paletas de cores no arquivo CSS.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable check-contrast --bg #0f172a --fg #f8fafc`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Ignorar contextos de imagem de fundo onde o texto se ajusta.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Taxa de contraste exibida com aprovação verde (Pass).</span></div>
+    </div>
+
+    <!-- 23. systematize-tokens -->
+    <div class="card">
+      <div class="card-title">23. systematize-tokens</div>
+      <div class="field"><span class="label">Categoria</span><span class="badge">Sistematizar</span></div>
+      <div class="field"><span class="label">Finalidade</span><span class="val">Converter valores brutos (px, hex) em variáveis e tokens CSS reutilizáveis.</span></div>
+      <div class="field"><span class="label">Momento de Uso</span><span class="val">Ao finalizar a refatoração do código CSS para fácil manutenção.</span></div>
+      <div class="field"><span class="label">Exemplo</span><span class="val">`impeccable systematize-tokens --output vars.css`</span></div>
+      <div class="field"><span class="label">Riscos</span><span class="val">Excesso de abstração tornando a leitura de seletores simples confusa.</span></div>
+      <div class="field"><span class="label">Evidência</span><span class="val">Uso de `:root` com `--font-primary`, `--color-primary`, etc., no CSS.</span></div>
+    </div>
+
+  </main>
+
+</body>
+</html>
