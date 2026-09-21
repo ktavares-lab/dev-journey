@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registros de Aplicação do Impeccable - v2</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --accent: #38bdf8;
+      --border: #334155;
+      --highlight: #818cf8;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .record-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .record-title {
+      color: var(--highlight);
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-top: 0;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .badge {
+      background: #0284c7;
+      color: #fff;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+    .field {
+      margin-top: 0.8rem;
+    }
+    .label {
+      font-weight: bold;
+      color: #94a3b8;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      display: block;
+    }
+    .val {
+      font-size: 0.95rem;
+    }
+    code {
+      background: #090d16;
+      color: #38bdf8;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Registros de Aplicação do Impeccable</h1>
+    <p>Documentação detalhada das 14 intervenções realizadas para a transição do portfólio de v1 para v2.</p>
+  </header>
+
+  <main>
+
+    <!-- 1. init -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>1. Inicialização do Projeto</span>
+        <span class="badge">init</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">Falta de tokens estruturados para modo claro/escuro e sistema de espaçamento global.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Padronizar variáveis CSS globais no `:root` garantirá coerência visual na v2.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>init</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Inicialize tokens de design no CSS base com paleta de contraste acessível e sistema de escala modular."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Variáveis globais no `:root` reestruturadas para suportar temas e escalas uniformes.</span></div>
+    </article>
+
+    <!-- 2. document -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>2. Documentação da Estrutura Inicial</span>
+        <span class="badge">document</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">A v1 continha seções sem links de navegação para as novas páginas extras do trabalho.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Mapear a árvore de navegação facilitará a inclusão do Catálogo e dos Registros.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>document</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Documente a arquitetura de páginas do portfólio v1 e aponte os pontos de inserção para o catálogo e registros."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Inclusão de links diretos no menu principal para 'Catálogo Impeccable' e 'Registros v2'.</span></div>
+    </article>
+
+    <!-- 3. shape -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>3. Reestruturação do Layout</span>
+        <span class="badge">shape</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">A imagem do 'Sobre mim' usava um placeholder Genérico com emoji fixo sem conteúdo adaptativo.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Substituir o elemento por um card estatístico de resumo profissional.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>shape</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Reestruture a seção sobre-mim trocando o quadrado de emoji por uma grade de métricas chave."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Novo layout com dados de conquistas (Projetos, Foco, Formação) agregando valor ao perfil.</span></div>
+    </article>
+
+    <!-- 4. critique -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>4. Avaliação Heurística Visual</span>
+        <span class="badge">critique</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">O botão de 'Entrar em contato' no hero tinha baixo destaque comparado com a ação principal.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Reforçar os contrastes e os estados hover tornará a navegação mais intuitiva.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>critique</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Analise a hierarquia visual do Hero e sugira ajustes de pesos e botões."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Hierarquia de CTAs ajustada com hover com transição e brilho sutil.</span></div>
+    </article>
+
+    <!-- 5. audit -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>5. Auditoria de Acessibilidade</span>
+        <span class="badge">audit</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">Os botões do filtro de projetos não informavam o estado ativo para leitores de tela.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Adicionar <code>aria-pressed</code> aos botões atende ao padrão WCAG.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>audit</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Audite a acessibilidade dos filtros interativos e adicione os atributos ARIA devidos."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Atributos `aria-pressed="true/false"` dinâmicos aplicados via JavaScript.</span></div>
+    </article>
+
+    <!-- 6. refine-typography -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>6. Refinamento Tipográfico</span>
+        <span class="badge">refine-typography</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">Os títulos h1 e h2 no Hero tinham proporção idêntica em telas médias.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Aplicar escala tipográfica dinâmica (`clamp()`) melhorará a leitura em qualquer tela.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>refine-typography</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Ajuste as fontes usando font-size com clamp() para responsividade fluida."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Textos ajustados com `clamp(2.5rem, 5vw, 4rem)` sem quebra abrupta.</span></div>
+    </article>
+
+    <!-- 7. refine-color -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>7. Refinamento de Paleta de Cores</span>
+        <span class="badge">refine-color</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">Texto secundário `#64748b` tinha contraste insuficiente em fundos escuros `#0f172a`.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Ajustar a cor secundária para `#cbd5e1` garantirá a taxa de 4.5:1.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>refine-color</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Substitua tons de cinza com baixo contraste por opções homologadas pela WCAG AA."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Aumento expressivo na legibilidade de parágrafos e legendas de projetos.</span></div>
+    </article>
+
+    <!-- 8. refine-spacing -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>8. Refinamento de Espaçamentos</span>
+        <span class="badge">refine-spacing</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">A linha do tempo na seção 'Jornada' acumulava margens irregulares em telas pequenas.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Normalizar paddings com base na escala de 8px resolverá o desalinhamento.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>refine-spacing</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Padronize as margens da timeline para múltiplos de 8px."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Layout da timeline limpo, uniforme e perfeitamente encadeado.</span></div>
+    </article>
+
+    <!-- 9. simplify-layout -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>9. Simplificação da Estrutura DOM</span>
+        <span class="badge">simplify-layout</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">Envólucros `div` extras desnecessários dentro das tags `article` dos cards.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Remover camadas redundantes torna a renderização mais rápida.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>simplify-layout</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Simplifique a DOM dos cards de projetos e habilidades eliminando wrappers sem estilo."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">DOM mais rasa e código HTML mais semântico e enxuto.</span></div>
+    </article>
+
+    <!-- 10. simplify-styles -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>10. Limpeza de Estilos Redundantes</span>
+        <span class="badge">simplify-styles</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">Regras de mídia duplicadas para seletores em `@media (max-width: 768px)`.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Agrupar Media Queries ao final do arquivo facilitará a manutenção do CSS.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>simplify-styles</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Consolide os blocos de media query do CSS eliminando redundâncias."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Redução no número de linhas e otimização do arquivo `style.css`.</span></div>
+    </article>
+
+    <!-- 11. prep-responsive -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>11. Preparação Responsiva</span>
+        <span class="badge">prep-responsive</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">O menu mobile da v1 cobria a tela sem fechamento suave ao clicar num link.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Adicionar animação de slide-down e tratamento de clique fecha o menu com fluidez.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>prep-responsive</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Aprimore a transição e usabilidade do menu de navegação mobile."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Menu mobile com animação fluida e fechamento automático ao selecionar a seção.</span></div>
+    </article>
+
+    <!-- 12. prep-accessibility -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>12. Preparação para Acessibilidade</span>
+        <span class="badge">prep-accessibility</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">Links com destino externo sem indicação textual para leitores de tela.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Adicionar rótulos descritivos e atributos `rel="noopener"` reforçará acessibilidade e segurança.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>prep-accessibility</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Insira aria-label nos links externos de GitHub, LinkedIn e Email."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Navegação por teclado e leitores de tela plenamente atendida.</span></div>
+    </article>
+
+    <!-- 13. polish -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>13. Polimento Visual e Microinterações</span>
+        <span class="badge">polish</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">Efeito hover nos cards de projetos era brusco sem efeito de profundidade.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Adicionar transição suave com `transform: translateY()` e sombra ambiente.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>polish</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Aplique refinamento de microinteração com sombras e elevação nos cards ao passar o cursor."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Animação fluida e feedback tátil/visual moderno em todos os componentes interativos.</span></div>
+    </article>
+
+    <!-- 14. live -->
+    <article class="record-card">
+      <div class="record-title">
+        <span>14. Validação de Produção</span>
+        <span class="badge">live</span>
+      </div>
+      <div class="field"><span class="label">Problema Observado</span><span class="val">Verificação de integridade dos links relativos e rotas internas do projeto.</span></div>
+      <div class="field"><span class="label">Hipótese de Melhoria</span><span class="val">Garantir que todos os caminhos funcionem no GitHub Pages sem erros 404.</span></div>
+      <div class="field"><span class="label">Comando Escolhido</span><span class="val"><code>live</code></span></div>
+      <div class="field"><span class="label">Prompt / Orientação</span><span class="val">"Valide todas as rotas internas, links das páginas extras e scripts."</span></div>
+      <div class="field"><span class="label">Resultado Produzido</span><span class="val">Links e navegação testados e operacionais para a entrega da v2.</span></div>
+    </article>
+
+  </main>
+
+</body>
+</html>
